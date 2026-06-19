@@ -54,14 +54,8 @@ public class ExemploSemPOO
         y.B = double.Parse(Console.ReadLine());
         y.C = double.Parse(Console.ReadLine());
 
-        double p1 = (x.A + x.B + x.C) / 2;
-        double p2 = (y.A + y.B + y.C) / 2;
-
-        double area1Calc = p1 * (p1 - x.A) * (p1 - x.B) * (p1 - x.C);
-        double area2Calc = p2 * (p2 - y.A) * (p2 - y.B) * (p2 - y.C);
-
-        double area1 = Math.Sqrt(area1Calc);
-        double area2 = Math.Sqrt(area2Calc);
+        double area1 = x.CalculateArea();
+        double area2 = y.CalculateArea();
 
         if (area1 > area2)
         {
