@@ -13,6 +13,13 @@ namespace Course
             Preco = preco;
             Quantidade = quantidade;
         }
+
+        public Product(string nome, double preco)
+        {
+            Nome = nome;
+            Preco = preco;
+        }
+
         public double ValorTotalEmEstoque()
         {
             return Preco * Quantidade;
